@@ -9,11 +9,6 @@ import Avatar from '../assets/images/avatar-1.png';
 
 // Components
 import MenuButton from './MenuButton';
-import { FaSignOutAlt } from 'react-icons/fa';
-import { BiLogOut } from 'react-icons/bi';
-import { IoMdLogOut } from 'react-icons/io';
-import { CgLogOut } from 'react-icons/cg';
-import { IoLogOut } from 'react-icons/io5';
 import { PiSignOut } from 'react-icons/pi';
 
 const MenuBar = () => {

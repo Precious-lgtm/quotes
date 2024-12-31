@@ -50,7 +50,7 @@ const Quotes = () => {
                                                 {item.tag}
                                             </label>
                                         }
-                                        <label className= {item.name == 'Status' ? "text-orange px-1 py-1 rounded-xl bg-lightpink" : ''}>{item.value}</label>
+                                        <label className= {item.name == 'Status' ? "text-orange px-2 py-1 rounded-xl bg-lightpink" : ''}>{item.value}</label>
                                         {item.role && 
                                             <label className="flex flex-row w-auto justify-center items-center">
                                                 <BsDot size={15} className="text-slate-400" />

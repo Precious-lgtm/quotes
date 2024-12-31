@@ -1,7 +1,7 @@
 import React from "react";
 
 // Assets
-import Signdoc from '../assets/icon/sign-doc.svg';
+import { ReactComponent as Signdoc} from '../assets/icon/sign-doc.svg';
 
 // Icons
 import { FaChevronDown } from "react-icons/fa6";

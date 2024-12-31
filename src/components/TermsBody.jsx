@@ -4,7 +4,7 @@ import React, { useRef } from 'react';
 import { deliveryinputs } from '../data/dataItems';
 
 // Icons
-import Upload from '../assets/icon/upload.svg';
+import {ReactComponent as Upload} from '../assets/icon/upload.svg';
 
 // Components
 import ButtonContainer from './ButtonContainer';

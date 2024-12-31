@@ -4,7 +4,7 @@ import { ReactComponent as InventoryIcon } from '../assets/icon/box.svg';
 import { ReactComponent as ProcurementIcon } from '../assets/icon/cart.svg';
 import { ReactComponent as FinanceIcon } from '../assets/icon/money-1.svg';
 import { ReactComponent as ChatIcon } from '../assets/icon/chats.svg';
-import { ReactComponent as CalendarIcon } from '../assets/icon/calendar-alt.svg';
+import { ReactComponent as CalendarIcon } from '../assets/icon/calendar.svg';
 import { ReactComponent as ContactIcon } from '../assets/icon/sign-doc.svg';
 
 // Lower Menu

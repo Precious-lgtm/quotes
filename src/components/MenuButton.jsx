@@ -7,7 +7,7 @@ import { useStateContext } from "../contexts/ContextProvider";
 // Icons
 import { FaChevronRight, FaChevronUp } from "react-icons/fa6";
 
-const MenuButton = ({icon, name, submenu, alerts, ...props}) => {
+const MenuButton = ({ icon : Icon, name, submenu, alerts, ...props}) => {
 
     const { estate, setEstate } = useStateContext();
 
@@ -36,7 +36,7 @@ const MenuButton = ({icon, name, submenu, alerts, ...props}) => {
     return (
         <div onClick={() => changeSelection(name, submenu[0]?.name)} className= "w-11/12 h-auto my-0.5" {...props}>
             <div style={estate?.name == name ? {backgroundColor: "#E3EAFB"} : {}} className="w-full flex flex-row justify-start items-center px-2 py-2 rounded-md">
-                <img src={icon} width={16} className={estate?.name == name ? {color: '#175CFF'} : {}} />
+                <Icon width={16} style={estate?.name == name ? { color: '#175CFF'} : { color: '#344054'}} />
                 <label className="font-satoshi text-xs w-3/4 mx-2">{name}</label>
                 {submenu?.length > 0 ?
                     estate?.name == name ? <FaChevronUp size={10} /> : <FaChevronRight size={10} />

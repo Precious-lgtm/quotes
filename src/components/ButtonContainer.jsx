@@ -6,7 +6,7 @@ import { FaSpinner } from 'react-icons/fa';
 import { CgClose } from 'react-icons/cg';
 
 //Images
-import Sent from '../assets/icon/sent.svg';
+import { ReactComponent as Sent } from '../assets/icon/sent.svg';
 
 const ButtonContainer = ({ location, final, ...props}) => {
 

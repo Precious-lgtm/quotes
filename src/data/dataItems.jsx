@@ -24,21 +24,25 @@ export const inputs = [
     {
         name: 'RFQ No',
         placeholder: 'RGQ-10234',
+        value: 'RGQ-10234',
         type: 'text'
     },
     {
         name: 'Title',
         placeholder: 'Request for Equipments',
+        value: 'Request for Equipments',
         type: 'text'
     },
     {
         name: 'Department',
         placeholder: 'Maternity',
-        type: ''
+        value: 'Maternity',
+        type: 'text'
     },
     {
         name: 'Expected Delivery Date',
         placeholder: '2024-12-02',
+        value: '2024-12-02',
         type: 'date',
         icon: <BiCalendar size={10} className='text-slate-300' />
     }

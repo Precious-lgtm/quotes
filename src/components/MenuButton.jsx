@@ -35,16 +35,16 @@ const MenuButton = ({ icon : Icon, name, submenu, alerts, ...props}) => {
 
     return (
         <div onClick={() => changeSelection(name, submenu[0]?.name)} className= "w-11/12 h-auto my-0.5" {...props}>
-            <div style={estate?.name == name ? {backgroundColor: "#E3EAFB"} : {}} className="w-full flex flex-row justify-start items-center px-2 py-2 rounded-md">
+            <div style={estate?.name == name ? {backgroundColor: "#E3EAFB"} : {}} className="w-full flex flex-row justify-start items-center px-2 py-1.5 rounded-md">
                 <Icon width={16} style={estate?.name == name ? { color: '#175CFF'} : { color: '#344054'}} />
-                <label className="font-satoshi text-xs w-3/4 mx-2">{name}</label>
+                <label className="font-satoshi text-xs w-3/4 mx-2 text-darkgray">{name}</label>
                 {submenu?.length > 0 ?
-                    estate?.name == name ? <FaChevronUp size={10} /> : <FaChevronRight size={10} />
+                    estate?.name == name ? <FaChevronUp size={10} color="#344054" /> : <FaChevronRight size={10} color="#344054" />
                     : 
                     ''
                 }
                 {alerts > 0 ?
-                    <label className="bg-primary text-white rounded-full text-[8px] p-1 font-satoshi text-center">{alerts}</label>
+                    <label className="bg-primary text-white rounded-full text-[8px] px-1.5 py-1 font-satoshi text-center">{alerts}</label>
                     :
                     ''
                 }

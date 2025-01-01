@@ -16,14 +16,25 @@ export default {
         lightgrey: '#F9FAFB',
         darkgray: '#344054',
         darkblue: '#1D2739',
+        bluegray: '#667185',
+        deepblue: '#101928',
+        tertiary: '#555E68',
+        fadegray: '#98A2B3',
+        deepgray: '#475367',
         red: '#D42620',
+        innergray: '#E9E9E9',
         lightpink: '#FFECE5',
+        bordergray: '#E4E7EC',
+        inputgray: '#D0D5DD',
         orange: '#F56630'
       },
       fontFamily: {
         "satoshi": ['Satoshi'],
         "sans": ['"Roboto"', "Arial", "sans-serif"]
       },
+      fontSize: {
+        'xxs': '10px',
+      }
     },
   },
   plugins: [],

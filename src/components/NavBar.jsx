@@ -7,9 +7,9 @@ const NavBar = ({ main, sub, mainlink, sublink, ...props }) => {
 
     return (
         <div className="w-11/12 flex flex-row justify-start items-center mt-5">
-            <button className="font-satoshi text-sm text-primary mr-2" onClick={() => navigate(mainlink)}>{main}</button>
-            <>/</>
-            <button className="font-satoshi text-sm text-darkgray ml-2" onClick={() => navigate(sublink)}>{sub}</button>
+            <button className="font-satoshi text-xs text-primary mr-2" onClick={() => navigate(mainlink)}>{main}</button>
+            <label className="text-fadegray">/</label>
+            <button className="font-satoshi text-xs text- ml-2 text-bluegray" onClick={() => navigate(sublink)}>{sub}</button>
         </div>
     )
 }

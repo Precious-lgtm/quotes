@@ -14,12 +14,12 @@ import { PiSignOut } from 'react-icons/pi';
 const MenuBar = () => {
 
     return (
-        <div className='w-1/6 h-screen bg-lightgray overflow-hidden flex flex-col justify-start items-center py-5 px-2'>
+        <div className='w-[18.75%] h-screen bg-lightgray overflow-hidden flex flex-col justify-start items-center py-5 px-2'>
             <div className='w-full h-1/12 flex flex-row justify-center items-center'>
-                <img src={Logo} className='w-20 h-6 ml-2' />
-                <label className='font-satoshi text-xs text-darkblue font-bold ml-2'>Medical Advanced Platform</label>
+                <img src={Logo} className='w-[4.5rem] h-6 ml-2' />
+                <label className='font-satoshi text-xs text-darkblue font-bold ml-2 leading-4'>Medical Advanced Platform</label>
             </div>
-            <div className='w-full h-3/4 flex flex-col justify-start items-start py-3'>
+            <div className='w-full h-3/4 flex flex-col justify-start items-start pt-8 pb-3'>
                 {menuItems.map((item, index) => (
                     <MenuButton 
                         key={index}
@@ -41,9 +41,9 @@ const MenuBar = () => {
                 ))
                 }
             </div>
-            <div className='w-full h-auto flex flex-row justify-start items-center py-1'>
+            <div className='w-full h-auto flex flex-row justify-center items-center py-1'>
                 <img src={Avatar} className='w-8 h-8' />
-                <div className='w-3/4 h-auto flex flex-col justify-start items-start ml-2'>
+                <div className='w-2/3 h-auto flex flex-col justify-start items-start ml-2'>
                     <label className='font-satoshi text-[11px] font-bold my-0 py-0'>Mark Benson</label>
                     <label className='font-satoshi text-[10px] font-normal mt-0'>markbenson@coremed.com</label>
                 </div>

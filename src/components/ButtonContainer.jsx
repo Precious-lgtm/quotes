@@ -69,16 +69,16 @@ const ButtonContainer = ({ location, final, ...props}) => {
 
     return (
         <div className='w-full flex flex-row justify-end items-center mt-5'>
-            <button className='px-3 py-2 mx-1 border border-slate-300 font-satoshi text-xs rounded'>
+            <button onClick={() => navigate('/')} className='px-4 py-1.5 mx-1 border border-bordergray font-satoshi text-xs rounded'>
                 Cancel
             </button>
-            <button className='px-6 py-2 mx-1 border border-primary rounded font-satoshi text-xs text-primary'>Save as Draft</button>
-            <button onClick={() => changeLocation()} className='px-6 py-2 mx-1 bg-primary border-primary rounded font-satoshi text-xs text-white'>{final}</button>
+            <button className='px-6 py-1.5 mx-1 border border-primary rounded font-satoshi text-xs text-primary'>Save as Draft</button>
+            <button onClick={() => changeLocation()} className='px-6 py-1.5 mx-1 bg-primary border-primary rounded font-satoshi text-xs text-white'>{final}</button>
             {open.confirmed == true &&
                 <div className="w-screen h-screen bg-slate-400 bg-opacity-25 fixed top-0 right-0 flex flex-col justify-center items-center">
                     <div className="w-2/5 h-auto flex flex-col justify-start items-center bg-white px-4 py-4 rounded">
-                        <label className="font-satoshi text-black text-left w-full font-bold">Confirmation</label>
-                        <label className="font-satoshi text-xs text-left text-slate-400 w-full my-2">
+                        <label className="font-satoshi text-deepblue text-left w-full font-bold">Confirmation</label>
+                        <label className="font-satoshi text-xs text-left text-deepgray w-full my-2">
                             You are about to submit this quote in response to RFQ ID, this will immediately be sent to the client “Westend Clear Hospital”. Are you sure you want to proceed?
                         </label>
                         <div className="w-full flex flex-row justify-end items-center my-4">
@@ -92,7 +92,7 @@ const ButtonContainer = ({ location, final, ...props}) => {
                 <div className="w-screen h-screen bg-slate-400 bg-opacity-25 fixed top-0 right-0 flex flex-col justify-center items-center">
                     <div className="w-1/4 flex flex-col justify-center items-center bg-white rounded px-3 py-3">
                         <FaSpinner size={20} className="text-primary" />
-                        <label className='font-satoshi text-xs text-black my-1.5'>Sending Quote..</label>
+                        <label className='font-satoshi text-xs text-deepblue my-1.5'>Sending Quote..</label>
                     </div>
                 </div>
             }
@@ -100,7 +100,7 @@ const ButtonContainer = ({ location, final, ...props}) => {
                 <div className="w-full h-screen bg-slate-400 bg-opacity-25 fixed top-0 right-0 flex flex-col justify-center items-center">
                     <div className="w-1/5 flex flex-row justify-between items-center bg-white rounded px-3 py-3">
                         <img src={Sent} className="w-12 h-12" alt="sent" />
-                        <label className='font-satoshi text-xs'>RFQ ID Sent Successfully!!</label>
+                        <label className='font-satoshi text-xs text-deepblue'>RFQ ID Sent Successfully!!</label>
                         <button onClick={() => setDefault()}>
                             <CgClose size={16} className="text-darkgray" />
                         </button>

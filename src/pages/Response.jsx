@@ -8,7 +8,7 @@ const Response = () => {
 
     return (
         <div className="w-5/6 h-screen flex flex-col justify-start items-center overflow-auto">
-            <PageHeader />
+            <PageHeader backVisible={false} />
             <NavBar main={'Quotes'} sub={'Quote Response'} mainlink={'/'} sublink={'/quote-response'} />
             <Steps id={1} />
             <Requests />

@@ -25,25 +25,25 @@ const Steps = ({ id, ...props }) => {
     ]
 
     return (
-        <div className="w-11/12 flex flex-row justify-start items-center px-3 py-3 border border-slate-300 rounded mt-5" {...props}>
+        <div className="w-11/12 flex flex-row justify-start items-center px-3 py-3 border border-bordergray rounded mt-5" {...props}>
             {phases.map((item, index) => (
                 <div key={index} className="w-1/3 flex flex-row justify-start items-center">
                     <label 
                         style={id == item.id ? {backgroundColor: '#175CFF', color: 'white'} : (item.id < id ) ? {backgroundColor: '#E7F6EC', color: '#0F973D', fontWeight: 600} : {}}
-                        className="font-satoshi text-slate-400 text-xs border border-slate-300 rounded-full px-2.5 py-1"
+                        className="font-satoshi text-deepgray text-xs border border-slate-300 rounded-full px-2.5 py-1"
                     >
                         {item.id}
                     </label>
                     <div className="w-auto flex flex-col justify-around items-start px-2">
                         <label 
-                            style={id == item.id ? {fontWeight: 'bold', color: 'black'} : {}}
-                            className="font-satoshi text-slate-400 text-sm"
+                            style={id == item.id ? {fontWeight: 'bold', color: 'black'} : (item.id < id) ? { color: '#101928', fontWeight: 'bold'  } : { color: '#667185', fontWeight: 'bold' }}
+                            className="font-satoshi text-deepgray text-xs"
                         >
                             {item.name}
                         </label>
                         <label 
-                            style={id == item.id ? {color: 'black'} : {}}
-                            className="font-satoshi text-slate-400 text-xs"
+                            style={id == item.id ? {color: '#475367'} : { color: '#667185'}}
+                            className="font-satoshi text-xxs"
                         >
                             {item.sub}
                         </label>
